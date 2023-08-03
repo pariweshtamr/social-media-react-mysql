@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overscroll-behavior: none;
+}
+
+.leftbar::-webkit-scrollbar,
+.righbar::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-shadow {
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.09);
+  -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.09);
+}
+
 .login-bg {
   background: linear-gradient(rgba(11, 79, 96, 0.5), rgba(11, 79, 96, 0.5)),
     url("https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
