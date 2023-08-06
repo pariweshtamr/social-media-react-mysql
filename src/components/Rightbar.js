@@ -2,7 +2,7 @@ const Rightbar = () => {
   return (
     <div className="rightbar flex-[4.2] sticky top-[70px] !h-[calc(100vh_-_70px)] overflow-scroll">
       <div className="p-[20px] text-sm">
-        <div className="custom-shadow p-[15px] mb-[15px]">
+        <div className="custom-shadow bg-white p-[15px] mb-[15px]">
           <span className="text-gray-500">Suggestions for you</span>
           <div className="flex justify-between items-center m-[15px_0]">
             <div className="flex items-center gap-[15px] text-xs">
@@ -42,7 +42,7 @@ const Rightbar = () => {
           </div>
         </div>
 
-        <div className="custom-shadow p-[15px] mb-[15px]">
+        <div className="custom-shadow bg-white p-[15px] mb-[15px]">
           <span className="text-gray-500">Latest activities</span>
           <div className="flex justify-between items-center m-[15px_0]">
             <div className="flex items-center gap-[15px] text-[11px]">
@@ -62,7 +62,7 @@ const Rightbar = () => {
           </div>
         </div>
 
-        <div className="custom-shadow p-[15px] mb-[15px]">
+        <div className="custom-shadow bg-white p-[15px] mb-[15px]">
           <span className="text-gray-500">Online Users</span>
           <div className="flex justify-between items-center m-[15px_0]">
             <div className="flex items-center gap-[15px] text-[11px] relative">

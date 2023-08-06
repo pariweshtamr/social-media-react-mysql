@@ -4,7 +4,7 @@ import Rightbar from "./Rightbar"
 
 const Layout = ({ children }) => {
   return (
-    <div className="">
+    <div className="bg-[#F6F3F5]">
       <Navbar />
       <div className="flex">
         <Leftbar />

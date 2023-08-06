@@ -11,7 +11,7 @@ import {
 import { Link } from "react-router-dom"
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between p-[10px_20px] h-[50px] border-b border-b-lightgray sticky top-0 bg-white">
+    <div className="flex items-center justify-between p-[10px_20px] h-[50px] border-b border-b-lightgray sticky top-0 bg-white z-50">
       <div className="flex items-center gap-[30px]">
         <Link to={"/"}>
           <span className="font-bold text-[20px] text-[#024172]">
