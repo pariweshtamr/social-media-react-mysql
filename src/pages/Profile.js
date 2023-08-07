@@ -11,23 +11,23 @@ import {
 import Posts from "components/Posts"
 const Profile = () => {
   return (
-    <div>
+    <div className="w-full">
       <div className="w-full h-[300px] relative">
         <img
           src="https://images.pexels.com/photos/15481199/pexels-photo-15481199/free-photo-of-yellow-cab-between-buildings.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          alt="profile-pic"
+          alt="cover-pic"
           className="w-full h-full object-cover"
         />
         <img
           src="https://images.pexels.com/photos/13246954/pexels-photo-13246954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          alt="cover-pic"
+          alt="profile-pic"
           className="w-[160px] h-[160px] rounded-full object-cover absolute left-0 right-0 m-auto top-[200px]"
         />
       </div>
 
-      <div className="p-[0px_50px]">
-        <div className="h-[250px] post-shadow rounded-b-[20px] bg-white p-[40px] flex items-center justify-between mb-[20px]">
-          <div className="flex-1 flex gap-[10px]">
+      <div className="p-[0px_50px] xs:p-[0_10px] md:p-[0_20px]">
+        <div className="h-[250px] post-shadow rounded-b-[20px] bg-white p-[40px] flex items-center justify-between mb-[20px] xs:flex-col xs:p-[20px] xs:h-[30vh] xs:rounded-[20px] xs:mt-[4.5rem]">
+          <div className="flex-1 flex gap-[10px] md:flex-col">
             <a href="www.facebook.com">
               <FacebookTwoTone />
             </a>
@@ -57,7 +57,7 @@ const Profile = () => {
             </button>
           </div>
 
-          <div className="flex-1 flex items-center justify-end gap-[10px]">
+          <div className="flex-1 flex items-center justify-end xs:items-end gap-[10px]">
             <Email />
             <MoreVert />
           </div>

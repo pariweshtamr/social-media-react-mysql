@@ -13,7 +13,7 @@ import Courses from "assets/12.png"
 import Fund from "assets/13.png"
 const Leftbar = () => {
   return (
-    <div className="flex-[2.5] sticky top-[70px] !h-[calc(100vh_-_70px)] overflow-scroll leftbar bg-white">
+    <div className="flex-[2.5] sticky top-[50px] !h-[calc(100vh_-_50px)] overflow-scroll leftbar bg-white xs:hidden">
       <div className="p-[20px] text-sm">
         <div className="menu flex flex-col gap-[15px]">
           <div className="flex items-center gap-[10px] font-[500] text-sm">

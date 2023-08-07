@@ -27,16 +27,16 @@ const Navbar = () => {
           <input
             type="text"
             placeholder="Search..."
-            className="outline-none w-[500px]"
+            className="outline-none w-[500px] xs:hidden md:w-[200px]"
           />
         </div>
       </div>
 
-      <div className="flex items-center gap-[20px]">
+      <div className="flex items-center gap-[20px] xs:hidden">
         <Person />
         <Email />
         <Notifications />
-        <div className="flex items-center gap-[10px] font-[500] text-sm">
+        <div className="flex items-center gap-[10px] font-[500] text-sm md:hidden">
           <img
             src=""
             alt="profile-img"

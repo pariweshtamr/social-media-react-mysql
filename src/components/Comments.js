@@ -11,7 +11,7 @@ const Comments = () => {
     },
   ]
   return (
-    <div className="">
+    <div className="w-full">
       <div className="flex items-center justify-between gap-[20px] m-[20px_0]">
         <img
           src={""}
@@ -21,12 +21,13 @@ const Comments = () => {
         <input
           type="text"
           placeholder="Write a comment"
-          className="flex-[5] p-[5px_10px] border border-solid border-[#b2b2b2]"
+          className="flex-[5] p-[5px_10px] border border-solid border-[#b2b2b2] xs:text-sm"
         />
-        <button className="bg-[#024172] text-white p-[10px] text-sm cursor-pointer rounded-[5px]">
+        <button className="bg-[#024172] text-white p-[10px] text-sm cursor-pointer rounded-[5px] xs:p-[5px]">
           Comment
         </button>
       </div>
+
       {comments?.map((comment) => (
         <div
           className="flex justify-between my-[30px] gap-[20px]"
@@ -37,11 +38,11 @@ const Comments = () => {
             alt="profile-pic"
             className="w-[40px] h-[40px] rounded-full object-cover"
           />
-          <div className="flex-[5] flex flex-col gap-[3px] items-start">
+          <div className="flex-[5] flex flex-col gap-[3px] items-start xs:text-sm">
             <span className="font-[500]">{comment.name}</span>
             <p>{comment.desc}</p>
           </div>
-          <span className="flex-[1] flex justify-end text-gray-500 text-xs">
+          <span className="flex-[1] flex justify-end text-gray-500 text-xs xs:text-[8px]">
             1 hour ago
           </span>
         </div>

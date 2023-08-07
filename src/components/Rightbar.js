@@ -1,6 +1,6 @@
 const Rightbar = () => {
   return (
-    <div className="rightbar flex-[4.2] sticky top-[70px] !h-[calc(100vh_-_70px)] overflow-scroll">
+    <div className="rightbar flex-[4.2] sticky top-[50px] !h-[calc(100vh_-_50px)] overflow-scroll xs:hidden md:hidden">
       <div className="p-[20px] text-sm">
         <div className="custom-shadow bg-white p-[15px] mb-[15px]">
           <span className="text-gray-500">Suggestions for you</span>

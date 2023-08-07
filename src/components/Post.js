@@ -14,9 +14,9 @@ const Post = ({ post }) => {
   const liked = false
   return (
     <div className="post-shadow bg-white rounded-[10px]">
-      <div className="p-[20px]">
+      <div className="p-[20px] xs:p-[10px]">
         <div className="flex justify-between items-center">
-          <div className="flex items-center gap-[10px] text-sm">
+          <div className="flex items-center gap-[10px] text-sm xs:text-xs">
             <img
               src={post.profilePic}
               alt="profile-pic"
@@ -33,7 +33,7 @@ const Post = ({ post }) => {
         </div>
 
         <div className="my-[20px]">
-          <p className="">{post.desc}</p>
+          <p className="xs:text-sm">{post.desc}</p>
           <img
             src={post.img}
             alt="post-img"

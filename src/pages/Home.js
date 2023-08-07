@@ -3,9 +3,9 @@ import Stories from "components/Stories"
 
 const Home = () => {
   return (
-    <div>
+    <div className="px-[20px] xs:px-0 md:p-0">
       <Stories />
-      <div className="px-[20px]">
+      <div className="px-[20px] xs:px-[10px]">
         <Posts />
       </div>
     </div>
