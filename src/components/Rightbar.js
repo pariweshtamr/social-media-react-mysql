@@ -1,4 +1,8 @@
+import { useSelector } from "react-redux"
+
 const Rightbar = () => {
+  const { user } = useSelector((state) => state.user)
+
   return (
     <div className="rightbar flex-[4.2] sticky top-[50px] !h-[calc(100vh_-_50px)] overflow-scroll xs:hidden md:hidden">
       <div className="p-[20px] text-sm">
@@ -11,7 +15,9 @@ const Rightbar = () => {
                 alt="user"
                 className="w-[30px] h-[30px] rounded-full object-cover"
               />
-              <span className="font-[500]">Pariwesh Tamrakar</span>
+              <span className="font-[500]">
+                {user?.f_name} {user?.l_name}
+              </span>
             </div>
             <div className="flex items-center gap-[10px]">
               <button className="cursor-pointer p-[5px] text-white bg-[#024172]">

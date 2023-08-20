@@ -18,13 +18,15 @@ const Post = ({ post }) => {
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-[10px] text-sm xs:text-xs">
             <img
-              src={post.profilePic}
+              src={post.profile_pic}
               alt="profile-pic"
               className="h-[40px] w-[40px] rounded-full object-cover"
             />
             <div className="flex flex-col">
               <Link to={`/profile/${post.userId}`}>
-                <span className="font-[500]">{post.name}</span>
+                <span className="font-[500]">
+                  {post.f_name} {post.l_name}
+                </span>
               </Link>
               <span className="text-xs">1 min ago</span>
             </div>

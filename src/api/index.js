@@ -1,7 +1,6 @@
 import axios from "axios"
 
 export const requestApi = async (axiosInfo, sendAuth) => {
-  console.log(axiosInfo)
   try {
     if (sendAuth) {
       axiosInfo = {
